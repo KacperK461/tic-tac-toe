@@ -18,7 +18,7 @@ exports.emitRooms = (io) => {
 exports.createRoom = (socket, roomName , io) => {
     const roomId = `room-${socket.id}`;
     rooms.push({
-        roomName: roomName === String ? roomName : null, 
+        roomName: typeof roomName === 'string' ? roomName : null, 
         roomId,
         creator: socket.id,
         guest: null,
