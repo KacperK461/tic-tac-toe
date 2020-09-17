@@ -1,0 +1,206 @@
+body
+{
+    background-color: #464444;
+    font-family: 'Lato', sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #e9780f;
+}
+
+/* .game-container
+{
+    width: 100%;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 20% auto 20%;
+} */
+
+.start
+{
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    border: #e9780f 4px solid;
+    background-color: #ecb767;
+    height: 65vh;
+    position: relative;
+}
+
+.start-header
+{
+    background-color: #e9780f;
+    color: #464444;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .btn
+{
+    font-size: 40px;
+    color: #e9780f;
+    border: #e9780f 2px solid;
+    border-radius: 50px;
+    background-color: #464444;
+    padding: 30px;
+} */
+
+.board
+{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #e9780f;
+    /* border: #e9780f 7.5px solid; */
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 7.5px;
+}
+
+.box
+{
+    width: 195px;
+    height: 195px;
+    background-color: #464444;
+}
+
+.box-circle
+{
+    background-image: url('../img/circle.png');
+    background-size: cover;
+}
+
+.box-cross
+{
+    background-image: url('../img/cross.png');
+    background-size: cover;
+}
+
+.box-cross-hov:hover
+{
+    background-image: url('../img/cross.png');
+    background-size: cover;
+}
+
+.box-circle-hov:hover
+{
+    background-image: url('../img/circle.png');
+    background-size: cover;
+}
+
+.add-form
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.add-input
+{
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-top: #e9780f 4px solid;
+    border-right: #e9780f 4px solid;
+    box-sizing: border-box;
+    background-color: #ecb767;
+    color: #464444;
+    font-size: 16px;
+}
+
+.add-input:focus, .btn:focus
+{
+    outline: none;
+}
+
+.btn
+{    
+    border: none;  
+    background-color: #e9780f;
+    box-sizing: border-box;
+    color: #464444;
+    font-size: 16px;
+}
+
+.add-btn
+{
+    width: 20%;
+    height: 100%;
+    border-top: #e9780f 4px solid;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background-color: #464444;
+    color: #e9780f;
+}
+
+.room
+{
+    width: 100%;
+    padding: 10px;
+    border-bottom: #e9780f 4px solid;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.room-name
+{
+   color: #464444;
+   font-size: 20px; 
+   padding: 0;
+}
+
+.room-btn
+{
+    padding: 0 30px 0;
+}
+
+.room-container
+{
+    overflow-y: scroll;
+    height: calc(100% - 70px); 
+}
+
+.info
+{
+    text-align: center;
+    color: #e9780f;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.return-btn
+{
+    background-color: transparent;
+    border: #e9780f 3px solid;
+    border-radius: 60px;
+    padding: 30px;
+    color:#e9780f;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+}
+
+.return-btn:hover
+{
+    color: #464444;
+    background-color: #e9780f;
+}
+
+.error
+{
+    color: #e9780f;
+    font-size: 50px;
+    text-align: center;
+}

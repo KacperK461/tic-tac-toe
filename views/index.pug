@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Tic-Tac-Toe
+        link(href="/stylesheets/style.css", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap", rel="stylesheet")
+    body
+        header 
+            h1.header Tic-Tac-Toe
+        main
+            .container
+                .start#start
+                    h1.start-header Rooms
+                    .room-container#rooms
+                    form.add-form#add-room
+                        input(type="text", placeholder="Room name").add-input
+                        button.btn.add-btn Add
+
+                .game-container#game(style = "display: none;")
+                    .board#board
+                        .box#box1
+                        .box#box2
+                        .box#box3
+                        .box#box4
+                        .box#box5
+                        .box#box6
+                        .box#box7
+                        .box#box8
+                        .box#box9
+                    p.info#info
+                    button.btn.return-btn#return-btn Return to lobby
+    script(src="/socket.io/socket.io.js")
+    script(src="scripts/main.js")
