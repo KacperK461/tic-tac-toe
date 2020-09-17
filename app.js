@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
+const favicon = require('serve-favicon');
 const routes = require('./routes/index');
 const socketRouter = require('./routes/socket_router');
 const errorsHandler = require('./middlewares/errors');
@@ -10,6 +11,7 @@ const errorsHandler = require('./middlewares/errors');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(favicon(path.join(__dirname, 'public', "img", 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
