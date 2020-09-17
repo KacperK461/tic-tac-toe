@@ -44,7 +44,7 @@ exports.joinRoom = (socket, roomId, io) => {
 
 exports.move = (socket, index, io) => {
     for(room of rooms) {
-        if((socket.id === room.creator || socket.id === room.guest) && (index > 0 && index < 9)) {
+        if((socket.id === room.creator || socket.id === room.guest) && (index > 0 && index < 10)) {
             if(room.game.turn === 'O' && socket.id === room.guest) {
                 room.game.addField(index);       
             } else if(room.game.turn === 'X' && socket.id === room.creator) {
